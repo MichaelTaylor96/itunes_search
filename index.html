@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Redunder</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>EyeTunes</title>
 </head>
 <body>
-    <h1 class="header">Redunder</h1>
+    <h1 class="header">EyeTunes</h1>
     <div class="searches">
-        <input class="terms" type="text">
+        Search: <input class="terms" type="text">
         <div class="searchfor">
                 <span class="choicelabel">Search for:</span>
                 <input type="radio" name="type" value="song" checked>Tracks
@@ -18,13 +19,14 @@
             </div>
         <div class="sorter">
             <span class="choicelabel">Sort by:</span>
+            <input type="radio" name="sorter" value="relevance" checked>Relevance
             <input type="radio" name="sorter" value="genre">Genre
-            <input type="radio" name="sorter">
-            <input type="radio" name="sorter">
+            <input type="radio" name="sorter" value="date">Most Recent
         </div>
         <button type="submit" class="enter">Search</button>
     </div>
     <div class="results"></div>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
