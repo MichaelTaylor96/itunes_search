@@ -41,6 +41,7 @@ button {
     flex-basis: auto;
     margin: .5rem;
     background-color: white;
+    min-width: 200px;
     max-width: 30%;
 }
 
